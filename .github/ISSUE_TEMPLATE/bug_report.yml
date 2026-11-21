@@ -1,0 +1,126 @@
+name: Bug Report
+description: Something generated wrong, crashed or doesn't work as expected.
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a bug in **SH: Buried Halls**!
+        Please check the [existing issues](https://github.com/skyhunter77/sh-buried-halls-issues-tracker/issues?q=is%3Aissue) first, maybe it has already been reported.
+
+  - type: input
+    id: mc-version
+    attributes:
+      label: Minecraft version
+      placeholder: "e.g. 26.3, 26.2, 1.21.1"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform / Loader
+      options:
+        - Datapack
+        - Fabric
+        - NeoForge
+        - Forge
+    validations:
+      required: true
+
+  - type: input
+    id: mod-version
+    attributes:
+      label: "SH: Buried Halls version"
+      description: Shown in the file name or in the mod list.
+      placeholder: "e.g. 1.6.1"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Environment
+      options:
+        - Singleplayer
+        - Dedicated server
+        - Other (please explain below)
+    validations:
+      required: true
+
+  - type: input
+    id: server-software
+    attributes:
+      label: Server software and loader version (if relevant)
+      placeholder: "e.g. Fabric Loader 0.17.2, NeoForge 21.1.200, Paper 26.2"
+
+  - type: input
+    id: modpack
+    attributes:
+      label: Modpack (if you play one)
+      placeholder: "Name and version, e.g. Bogwood Matcha Flavoured 1.5.3"
+
+  - type: dropdown
+    id: world
+    attributes:
+      label: New or existing world?
+      description: Structures only generate in newly generated chunks.
+      options:
+        - "New world, created with SH: Buried Halls installed"
+        - "Existing world, SH: Buried Halls was added later"
+        - "Existing world, SH: Buried Halls was updated"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Describe the bug and what you expected to happen instead.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Create a new world with seed ...
+        2. Go to ...
+        3. ...
+
+  - type: input
+    id: seed-coords
+    attributes:
+      label: World seed and coordinates (for generation bugs)
+      description: Use `/seed` and the coordinates from F3.
+      placeholder: "Seed: 123456 / X: 100, Y: 40, Z: -250"
+
+  - type: input
+    id: log
+    attributes:
+      label: Log or crash report
+      description: Upload your `latest.log` or crash report to [mclo.gs](https://mclo.gs/) and paste the link here. Please don't paste the full log into the issue.
+      placeholder: "https://mclo.gs/..."
+
+  - type: textarea
+    id: other-mods
+    attributes:
+      label: Other mods or datapacks
+      description: Especially other world generation or structure mods.
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: Drag and drop images here. They help a lot with generation bugs.
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: I searched the existing issues and this bug hasn't been reported yet.
+          required: true
+        - label: "I'm using the latest version of SH: Buried Halls for my Minecraft version."
