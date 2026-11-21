@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: "Download SH: Buried Halls (Modrinth)"
+    url: https://modrinth.com/datapack/sh-buried-halls-underground-dungeon-structures
+    about: Official downloads, changelogs and info for modpack creators.
+  - name: "Download SH: Buried Halls (CurseForge)"
+    url: https://www.curseforge.com/minecraft/mc-mods/sh-buried-halls-underground-dungeon-structures
+    about: Official CurseForge page of the mod version.

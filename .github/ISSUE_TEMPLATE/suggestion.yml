@@ -1,0 +1,37 @@
+name: Suggestion
+description: Ideas for new rooms, entrances, loot or features.
+title: "[Suggestion] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Ideas are welcome! Please check the [existing issues](https://github.com/skyhunter77/sh-buried-halls-issues-tracker/issues?q=is%3Aissue) first, maybe someone already suggested it.
+
+  - type: textarea
+    id: idea
+    attributes:
+      label: Your idea
+      description: "What would you like to see in SH: Buried Halls?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: why
+    attributes:
+      label: Why would it be a good addition?
+      description: How would it make the dungeons more fun or interesting?
+
+  - type: textarea
+    id: references
+    attributes:
+      label: Sketches, screenshots or examples
+      description: Optional. Drag and drop images here.
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: I searched the existing issues and this hasn't been suggested yet.
+          required: true

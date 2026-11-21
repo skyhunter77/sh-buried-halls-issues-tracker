@@ -1,0 +1,73 @@
+name: Compatibility / Modpack
+description: "Problems or questions about using SH: Buried Halls together with other mods, datapacks or in a modpack."
+title: "[Compat] "
+labels: ["compat"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Modpack creators are welcome to include SH: Buried Halls, as long as you credit **skyhunter77** and link the official Modrinth page.
+        The IDs for tweaking frequency, biomes and loot are listed on the [Modrinth page](https://modrinth.com/datapack/sh-buried-halls-underground-dungeon-structures).
+
+  - type: dropdown
+    id: role
+    attributes:
+      label: Who are you?
+      options:
+        - Player
+        - Modpack creator
+        - Mod or datapack author
+    validations:
+      required: true
+
+  - type: input
+    id: other-project
+    attributes:
+      label: Other mod, datapack or modpack
+      description: Name and link, if possible.
+      placeholder: "e.g. Bogwood Matcha Flavoured, https://modrinth.com/..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: question
+    attributes:
+      label: Problem or question
+      description: What goes wrong, or what would you like to know?
+    validations:
+      required: true
+
+  - type: input
+    id: mc-version
+    attributes:
+      label: Minecraft version
+      placeholder: "e.g. 26.2"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform / Loader
+      options:
+        - Datapack
+        - Fabric
+        - NeoForge
+        - Forge
+    validations:
+      required: true
+
+  - type: input
+    id: mod-version
+    attributes:
+      label: "SH: Buried Halls version"
+      placeholder: "e.g. 1.6.1"
+    validations:
+      required: true
+
+  - type: input
+    id: log
+    attributes:
+      label: Log or crash report (if relevant)
+      description: Upload it to [mclo.gs](https://mclo.gs/) and paste the link here.
+      placeholder: "https://mclo.gs/..."
