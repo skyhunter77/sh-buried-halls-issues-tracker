@@ -7,7 +7,7 @@ This repository is the official public issue tracker for **SH: Buried Halls | Un
 ## Official Downloads
 - **Modrinth:** [SH: Buried Halls on Modrinth](https://modrinth.com/datapack/sh-buried-halls-underground-dungeon-structures)
 - **CurseForge (Mod):** [SH: Buried Halls on CurseForge](https://www.curseforge.com/minecraft/mc-mods/sh-buried-halls-underground-dungeon-structures)
-- **CurseForge (Datapack):** [SH: Buried Halls Datapack on CurseForge](LINK)
+- **CurseForge (Datapack):** [SH: Buried Halls Datapack on CurseForge](https://www.curseforge.com/minecraft/data-packs/sh-buried-halls-underground-dungeon-structures)
 
 Please only download SH: Buried Halls from these pages.
 
